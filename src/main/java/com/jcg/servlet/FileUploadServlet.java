@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 @WebServlet(description = "Upload File To The Server", urlPatterns = { "/fileUploadServlet" })
-@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 10, maxFileSize = 1024 * 1024 * 30, maxRequestSize = 1024 * 1024 * 50)
+@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 1024, maxFileSize = 1024 * 1024 * 1024, maxRequestSize = 1024 * 1024 * 1024)
 public class FileUploadServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
